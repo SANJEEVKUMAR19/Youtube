@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Navbar from './Components/Navbar';
+import Sidebar from './Components/Sidebar.jsx';
+import Stream from './Components/Stream.jsx';
+import Content from './Components/Content';
+import {NoteProvider} from './Components/NoteProvider';
+import {useRoutes,A} from 'hookrouter';
+import routes from './routes.js';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 function App() {
+  const routeResults = useRoutes(routes);
   return (
+  
+   <NoteProvider>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      {routeResults}
     </div>
+ 
+    </NoteProvider>
   );
 }
 

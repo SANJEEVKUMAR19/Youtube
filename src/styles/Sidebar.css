@@ -1,0 +1,143 @@
+.sidebar{
+    height: 100vh;
+    width: 15rem;
+    position:absolute;
+    top:50px;
+    float: left;
+    z-index:6;
+    margin-right: 80px;
+   
+    transition-delay: 0.3s;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    line-height: 30px;
+    background-color: rgb(3, 0, 0);
+  }
+
+  .sidebar-contents,.before-contents {
+      font-weight: 600; 
+      position:relative;
+      width: 15rem;
+      min-height:100%;
+      gap: 1em; 
+      top:2px;
+      
+      overflow-y: hidden;
+      overflow-x: hidden;
+      scrollbar-color: rgb(3, 78, 3) rgb(3, 0, 0);
+      scrollbar-width: thin;
+      scrollbar-highlight-color: blue;
+    
+  }
+  .sidebar::-webkit-scrollbar {
+    width: 12px;
+            /* width of the entire scrollbar */
+  }
+  
+  .sidebar::-webkit-scrollbar-track {
+    background: rgb(10, 7, 0);        /* color of the tracking area */
+  }
+  
+  .sidebar::-webkit-scrollbar-thumb {
+    background-color: rgb(8, 126, 4);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(0, 7, 2);  /* creates padding around scroll thumb */
+  }
+  .before-contents{
+    
+   background-color:rgb(5, 0, 0);
+   width:4rem;
+ 
+   border-bottom:none;
+   overflow: hidden;
+  }
+
+   .main {
+      z-index:15;
+      height:100px;
+      line-height: 35px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgb(180, 179, 179);
+     
+
+  }
+  .before-conntents .main{
+    z-index:15;
+    height:100px;
+    width:4rem;
+    line-height: 35px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(180, 179, 179);
+    display:none;
+  }
+.videos-details {   
+  z-index:15;
+  line-height: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(141, 139, 139);
+    
+ }
+ 
+ .main-contents,li{
+   display: flex;
+  align-items: center;
+  
+ }
+ span{
+   color:white;
+  left:20%;
+  position:relative;
+  bottom:2%
+ }
+ .before-span{
+   color:red;
+   visibility: hidden;
+ }
+ icons,.icons{
+   position:relative;
+   left:20px;
+   align-items: center;
+   display: flex;
+ }
+
+ .main-contents:hover ,li:hover {
+   background-color: rgb(59, 252, 53);
+   background-color: rgba(79, 252, 22,0.9);
+  
+}
+.main-contents:hover span,li:hover span{
+  color:black
+}
+.subscriptions{
+     
+     width:100%;
+     border-bottom: 1px solid grey;
+     line-height: 30px;
+     min-height: 100px;
+     padding-top: 20px;
+     padding-bottom: 20px;
+    
+}
+.More{
+ height:200px;
+ padding-top: 20px;
+ padding-bottom: 10px;
+ border-bottom: 1px solid grey;
+}
+.about{
+  color: green;
+   position: relative;
+   top: 40px;
+   margin-left: 10px;
+   max-width: 11rem;
+   align-items: center;
+   display:flex;
+   min-height: 50px;
+   font-size: 15px;
+}
+.show {
+  color: rgb(216, 10, 10);
+}
